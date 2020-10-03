@@ -149,7 +149,7 @@ public class Main extends JavaPlugin {
 
             } else {
               ItemStack[] stacks = openShops.get(p).getContents();
-              stacks[openShops.get(p).getSize() - 5] = null;§
+              stacks[openShops.get(p).getSize() - 5] = null;
               for (int i = 0; i < stacks.length; i++) {
                 if (stacks[i] != null && NBTUtils.getInt(stacks[i], "menuItem") == 1) {
                   stacks[i] = null;
